@@ -1,0 +1,18 @@
+1. Create your mysql database.
+2. Go to "https://yoursite.com/install", Enter your database information then click install.
+3. After installation, delete install folder for security reason.
+4. Login to your admin panel, example "https://yoursite.com/admin".
+    Defaul admin username and password is
+    USERNAME: admin
+    PASSWORD: 12345
+5. For security, Change your admin login information.
+6. setting faucet, captcha, and .etc from your admin dashboard.
+7. cronjob settings
+    every 5 mitutes updating price, command "wget -q -O - https://yoursite.com/cronjob/fiveminutes >/dev/null 2>&1"
+    once a day updating last price, command "wget -q -O - https://yoursite.com/cronjob/daily >/dev/null 2>&1"
+
+ every 5 mitutes updating price, command   "curl https://yoursite.com/cronjob/fiveminutes >/dev/null 2>&1"
+   once a day updating last price, "curl https://yoursite.com/cronjob/daily >/dev/null 2>&1"
+   Enjoy...
+   
+   
